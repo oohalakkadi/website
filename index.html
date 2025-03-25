@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooha Alakkadi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <main class="landing">
+        <div class="name-container">
+            <svg id="name-svg" viewBox="0 0 600 200">
+                <!-- SVG for OOHA with circuit elements will be here -->
+                <g class="letter-group">
+                    <circle class="letter o1" cx="75" cy="100" r="40" />
+                    <circle class="letter-inner o1-inner" cx="75" cy="100" r="25" />
+                    <path class="circuit c1" d="M115 100 L 150 100" />
+                </g>
+                
+                <g class="letter-group">
+                    <circle class="letter o2" cx="190" cy="100" r="40" />
+                    <circle class="letter-inner o2-inner" cx="190" cy="100" r="25" />
+                    <path class="circuit c2" d="M230 100 L 265 100" />
+                </g>
+                
+                <g class="letter-group">
+                    <path class="letter h" d="M280 60 V 140 M280 100 H 320 M320 60 V 140" />
+                    <path class="circuit c3" d="M320 100 L 355 100" />
+                </g>
+                
+                <g class="letter-group">
+                    <path class="letter a" d="M370 140 L 410 60 L 450 140 M385 110 H 435" />
+                </g>
+                
+                <!-- Circuit connectors -->
+                <path class="circuit-pulse" d="M75 140 L 75 170 L 300 170 L 300 180" />
+            </svg>
+        </div>
+        
+        <div class="explore-container">
+            <p>explore</p>
+            <div class="arrow-down">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5z"/>
+                </svg>
+            </div>
+        </div>
+    </main>
+    
+    <div class="navigation-hub">
+        <div class="central-node"></div>
+        <div class="path-container">
+            <!-- Circuit paths to each section -->
+            <div class="section-path" id="projects-path">
+                <div class="path-line"></div>
+                <div class="section-node">Projects</div>
+            </div>
+            <div class="section-path" id="experience-path">
+                <div class="path-line"></div>
+                <div class="section-node">Experience</div>
+            </div>
+            <div class="section-path" id="about-path">
+                <div class="path-line"></div>
+                <div class="section-node">About</div>
+            </div>
+            <div class="section-path" id="contact-path">
+                <div class="path-line"></div>
+                <div class="section-node">Contact</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section content will be loaded here -->
+    <section id="content"></section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
