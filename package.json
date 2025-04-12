@@ -46,11 +46,5 @@
     "sass": "^1.77.6",
     "typescript": "^5.5.3"
   },
-  "packageManager": "pnpm@9.5.0",
-  "pnpm": {
-    "overrides": {
-      "gsap": "npm:@acvigue/gsap@^3.12.5",
-      "@nuxt/image": "npm:@acvigue/nuxt-image@^1.7.0"
-    }
-  }
+  "packageManager": "pnpm@9.5.0"
 }
